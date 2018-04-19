@@ -5,8 +5,8 @@ from decimal import InvalidOperation
 class DriftAnalyzer():
 
     def __init__(self, number, fxtofx, method, percent):
-        with open('/home/sebastian/PythonProjects/NoiseMaker/Evaluations/%s/abrupt%sNoise%s/AbruptW1%sNoise%sN%s.csv'%(method,fxtofx,percent,fxtofx,percent,number)) as input_csv:
-            print('/home/sebastian/PythonProjects/NoiseMaker/Evaluations/%s/abrupt%sNoise%s/AbruptW1%sNoise%sN%s.csv'%(method,fxtofx,percent,fxtofx,percent,number))
+        with open('/home/sebastian/PythonProjects/NoiseMaker/Evaluations/AbruptClassNoise/%s/abrupt%sNoise%s/AbruptW1%sNoise%sN%s.csv'%(method,fxtofx,percent,fxtofx,percent,number)) as input_csv:
+            #print('/home/sebastian/PythonProjects/NoiseMaker/Evaluations/%s/abrupt%sNoise%s/AbruptW1%sNoise%sN%s.csv'%(method,fxtofx,percent,fxtofx,percent,number))
             readCSV = csv.reader(input_csv, delimiter=',')
             true_positive = 0
             false_positive = 0
